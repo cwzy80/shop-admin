@@ -1,13 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+defineProps({
+  msg: {
+    type: String,
+    default: '',
+  },
+  num: {
+    type: Number,
+    requier: true,
+    default: 0,
+  },
+})
 
-defineProps<{ msg: string }>()
-
-const count = ref(0)
+const 
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 ref="title">
+    {{ msg }}
+  </h1>
+  <h1>{{ num }}</h1>
 
   <p>
     Recommended IDE setup:
