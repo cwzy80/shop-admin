@@ -3,6 +3,9 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
 
+let a:number = 0
+a = 'abc'
+console.log(a)
 </script>
 
 <template>
@@ -13,7 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <HelloWorld
     ref="hello"
     msg="Hello Vue 3 + TypeScript + Vite"
-    :num="12"
+    num="12"
   />
 </template>
 

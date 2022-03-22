@@ -1,17 +1,20 @@
-<script setup lang="ts">
-defineProps({
-  msg: {
-    type: String,
-    default: '',
-  },
-  num: {
-    type: Number,
-    requier: true,
-    default: 0,
-  },
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    name: 'HelloWord',
+    props: {
+        msg: {
+            type: String,
+            default: '0',
+        },
+        num: {
+            type: Number,
+            default: 0,
+        },
+    },
 })
 
-const 
 </script>
 
 <template>

@@ -8,8 +8,6 @@ export default defineConfig({
     vue(),
     eslintPlugin({
       // 配置选项
-      cache: false,
-      fix: false,
     }),
   ],
 })
